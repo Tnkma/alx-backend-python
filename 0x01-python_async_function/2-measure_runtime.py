@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+""" function that returns the average runtime of wait_n"""
 import time
 import asyncio
 
