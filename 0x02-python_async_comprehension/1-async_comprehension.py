@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+""" Async Comprehension"""
+import asyncio
+from typing import Iterator
+
+
+async_gen = __import__('0-async_generator').async_generator
+
+
+async def async_comprehension() -> Iterator[float]:
+    """ collects 10 random number using async_generator"""
+    numbers = [num async for num in async_gen()]
+    return numbers
