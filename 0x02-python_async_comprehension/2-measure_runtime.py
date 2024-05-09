@@ -7,7 +7,7 @@ from typing import List
 async_comp = __import__('1-async_comprehension').async_comprehension
 
 
-async def measure_runtime() -> List[float]:
+async def measure_runtime() -> float:
     """ runs async_comp * 4 and measures the total time"""
     start_time = time.perf_counter()
     tasks = [async_comp() for _ in range(4)]
